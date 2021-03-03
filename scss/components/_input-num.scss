@@ -1,0 +1,24 @@
+.input-num {
+  // height: 50px;
+  width: 55px;
+  margin: 0 10px;
+  & input {
+    color: rgb(128, 128, 128);
+    width: 30px;
+    height: 30px;
+  }
+
+  &__wrapper {
+    position: relative;
+    & .fa-caret-up {
+      position: absolute;
+      top: 0;
+      right: 10px;
+    }
+    & .fa-caret-down {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+    }
+  }
+}

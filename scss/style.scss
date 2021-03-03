@@ -1,0 +1,85 @@
+@import './components/set-date';
+@import './components/input-num';
+@import './components/set-place';
+@import './components/add-btn.scss';
+
+$main-color: #ed9915;
+$text-color: #fff;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.searchbar {
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  align-items: center;
+  font-family: 'PT Sans', sans-serif;
+  height: 90px;
+  flex-wrap: wrap;
+  width: 100%;
+  h5 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.fas {
+  color: $main-color;
+  &.fa-caret-down {
+    color: rgb(128, 128, 128);
+  }
+}
+
+.find-btn {
+  background-color: $main-color;
+  color: $text-color;
+  outline: none;
+  border: none;
+  width: 175px;
+  height: 65px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  &:active {
+    background-color: #d88602;
+    transform: scale(0.98);
+  }
+}
+
+input[type='date'],
+input[type='text'] {
+  outline: none;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+}
+input[type='number'] {
+  text-align: center;
+  outline: none;
+  border: 1px solid rgb(128, 128, 128);
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 1125px) {
+  .find-btn {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .set-place {
+    width: 100%;
+  }
+}

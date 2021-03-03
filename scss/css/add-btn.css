@@ -1,0 +1,14 @@
+.add-btn {
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 35px;
+  margin: auto 20px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.add-btn:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=add-btn.css.map */
